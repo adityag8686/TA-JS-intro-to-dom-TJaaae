@@ -117,6 +117,7 @@
     ]
 let body = document.querySelector('body')
 let ul = document.createElement('ul')
+ul.classList.add("cc")
 books.forEach(e => {
     let li = document.createElement('li')
     let img = document.createElement('img')
