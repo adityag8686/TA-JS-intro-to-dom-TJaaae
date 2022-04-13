@@ -6,7 +6,14 @@ default value to be "text" and return the input element inside label. (create it
 */
 
 // Your code goes here
-
+function createInputElm(label, type="text") {
+  let input=document.createElement('input')
+  let label1 = document.createElement('label')
+  label1.innerText = label
+  input.type = type
+  label1.append(input)
+  return label1
+}
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
 createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></label>
